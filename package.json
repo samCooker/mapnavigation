@@ -1,0 +1,25 @@
+{
+  "name": "navigation_china",
+  "version": "1.1.0",
+  "description": "一个提供调用百度和高德地图的Cordova插件",
+  "cordova": {
+    "id": "cn.com.chaochuang.mapnavigation",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samCooker/mapnavigation.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "cookie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samCooker/mapnavigation/issues"
+  },
+  "homepage": "https://github.com/samCooker/mapnavigation#readme"
+}
