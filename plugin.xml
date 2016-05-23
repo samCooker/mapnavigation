@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cn.com.chaochuang.mapnavigation"
+        version="2.1.6">
+  <name>MapNavigation</name>
+  <description>一个提供调用原生地图的Cordova导航插件</description>
+  <js-module name="MapNavigation" src="www/MapNavigation.js">
+    <clobbers target="MapNavigation"/>
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="MapNavigation">
+        <param name="android-package" value="cn.com.chaochuang.MapNavigation"/>
+      </feature>
+      <feature name="MapMarker">
+        <param name="android-package" value="cn.com.chaochuang.MapMarker"/>
+      </feature>
+    </config-file>
+    <!--<config-file target="AndroidManifest.xml" parent="/manifest/application">-->
+      <!--<activity android:name="org.apache.cordova.CordovaActivity">-->
+        <!--<intent-filter>-->
+          <!--<category android:name="android.intent.category.DEFAULT"/>-->
+          <!--<category android:name="$PACKAGE_NAME"/>-->
+        <!--</intent-filter>-->
+      <!--</activity>-->
+    <!--</config-file>-->
+    <source-file src="src/android/MapNavigation.java" target-dir="src/cn/com/chaochuang"/>
+    <source-file src="src/android/MapMarker.java" target-dir="src/cn/com/chaochuang"/>
+  </platform>
+  <!-- 暂时无用-->
+  <!--<platform name="ios">-->
+  <!--<config-file target="config.xml" parent="/*">-->
+  <!--<feature name="Navigation">-->
+  <!--<param name="ios-package" value="Navigation" />-->
+  <!--</feature>-->
+  <!--</config-file>-->
+  <!--<source-file src="src/ios/Navigation.m" />-->
+  <!--</platform>-->
+</plugin>
