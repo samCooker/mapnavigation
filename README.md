@@ -9,15 +9,15 @@
 
 Javascript API:  
 
-//导航设置
-      var options = {
-        originLat:,//起点纬度
-        originLng:,//起点经度
-        originName:,//起点名称（用于显示）
-        destLat:,//目标经度
-        destLng:,//目标纬度
-        destName:,//目标名称（用于显示）
-      };
+      //导航设置
+          var options = {
+            originLat:,//起点纬度
+            originLng:,//起点经度
+            originName:,//起点名称（用于显示）
+            destLat:,//目标经度
+            destLng:,//目标纬度
+            destName:,//目标名称（用于显示）
+          };
       
       //调用百度地图 
         MapNavigation.navigationBaiduMap(options, function (msg) {
